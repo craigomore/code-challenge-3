@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #2222226a;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.film-list {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: 80vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.film-list button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.film-list button:hover,
+.film-list button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.film-details {
+  flex: 2 1 600px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.film-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.film-info {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.film-info li {
+  margin-bottom: 0.5rem;
+}
+
+#buy-ticket-btn {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#buy-ticket-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #d9534f;
+}
